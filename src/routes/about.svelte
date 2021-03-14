@@ -1,7 +1,7 @@
 <svelte:head>
-	<title>About</title>
+	<title>A propos</title>
 </svelte:head>
 
-<h1>About this site</h1>
+<h1>Au sujet de ce site</h1>
 
-<p>This is the 'about' page. There's not much here.</p>
+<p>Vous pourrez y voir les détails de la présente application; pas grand-chose pour l'instant.</p>
