@@ -19,7 +19,7 @@
 	}
 </style>
 
-<Title title="Recent posts" />
+<Title tab="blog" heading="Recent posts" />
 
 <ul>
 	{#each posts as post}

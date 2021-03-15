@@ -36,4 +36,4 @@
 	}
 </style>
 
-<Title title="Bienvenue!" />
+<Title tab="accueil" heading="bienvenue"  />

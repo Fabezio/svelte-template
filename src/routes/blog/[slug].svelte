@@ -54,7 +54,7 @@
 	}
 </style>
 
-<Title title={post.title} />
+<Title tab="blog | {post.title}" heading={post.title} />
 
 <div class="content">
 	{@html post.html}
