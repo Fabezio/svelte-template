@@ -14,6 +14,7 @@
 </script>
 
 <script>
+	import Title from '../../components/Title.svelte'
 	export let post;
 </script>
 
@@ -53,11 +54,7 @@
 	}
 </style>
 
-<svelte:head>
-	<title>{post.title}</title>
-</svelte:head>
-
-<h1>{post.title}</h1>
+<Title title={post.title} />
 
 <div class="content">
 	{@html post.html}

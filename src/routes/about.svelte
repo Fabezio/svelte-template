@@ -1,7 +1,7 @@
-<svelte:head>
-	<title>A propos</title>
-</svelte:head>
+<script>
+	import Title from '../components/Title.svelte'
+</script>
 
-<h1>Au sujet de ce site</h1>
+<Title title="Au sujet de ce site" />
 
 <p>Vous pourrez y voir les détails de la présente application; pas grand-chose pour l'instant.</p>

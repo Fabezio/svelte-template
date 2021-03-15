@@ -1,4 +1,5 @@
 <script context="module">
+	
 	export function preload() {
 		return this.fetch(`blog.json`).then(r => r.json()).then(posts => {
 			return { posts };
@@ -7,6 +8,7 @@
 </script>
 
 <script>
+	import Title from "../../components/Title.svelte";
 	export let posts;
 </script>
 
@@ -17,11 +19,7 @@
 	}
 </style>
 
-<svelte:head>
-	<title>Blog</title>
-</svelte:head>
-
-<h1>Recent posts</h1>
+<Title title="Recent posts" />
 
 <ul>
 	{#each posts as post}

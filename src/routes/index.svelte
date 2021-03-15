@@ -1,5 +1,5 @@
 <script>
-	import successkid from 'images/successkid.jpg';
+	import Title from '../components/Title.svelte';
 </script>
 
 <style>
@@ -36,8 +36,4 @@
 	}
 </style>
 
-<svelte:head>
-	<title>Modèle Svelte</title>
-</svelte:head>
-
-<h1>Bienvenue!</h1>
+<Title title="Bienvenue!" />
