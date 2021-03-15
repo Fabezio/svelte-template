@@ -3,6 +3,7 @@
 </script>
 
 <style>
+	/*
 	h1, figure, p {
 		text-align: center;
 		margin: 0 auto;
@@ -34,6 +35,7 @@
 			font-size: 4em;
 		}
 	}
+	*/
 </style>
 
 <Title tab="accueil" heading="bienvenue"  />
