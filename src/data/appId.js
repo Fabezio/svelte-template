@@ -1,6 +1,6 @@
 const appId = {
-    appname: "svelte-template",
-    applink: "https://github.com/Fabezio/"
+  appname: 'svelte-template',
+  applink: 'https://github.com/Fabezio/'
 
 }
 

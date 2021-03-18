@@ -4,7 +4,7 @@
 </script>
 
 <Title tab="accueil" heading="bienvenue" />
-<Form />
+<!-- <Form /> -->
 
 <style>
 	/*

@@ -8,7 +8,7 @@
         {appname} @ {new Date().getFullYear()}
     </span>
     <span>
-        mon code source : <a href={applink+appname} target="_blank">{appname}</a>
+        mon code source <a href={applink+appname} target="_blank">{appname}</a>
 
     </span>
     <span>
