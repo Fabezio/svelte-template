@@ -1,7 +1,7 @@
 <script>
     export let segment;
 </script>
-<style>
+<style >
 [aria-current] {
     position: relative;
     display: inline-block;
