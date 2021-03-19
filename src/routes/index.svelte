@@ -1,10 +1,13 @@
 <script>
 	import Title from "../components/Title.svelte";
-	import Form from "../components/Form.svelte";
+	// import Form from "../components/Form.svelte";
 </script>
 
-<Title tab="accueil" heading="bienvenue" />
+<Title tab="accueil" heading="bienvenue !" />
 <!-- <Form /> -->
+<section>
+	<p>Ceci est la page d'accueil</p>
+</section>
 
 <style>
 	/*

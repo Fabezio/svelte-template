@@ -1,9 +1,10 @@
 <script>
     import Nav from './navbar/Nav.svelte'
     
-    let title
+    let title;
+    export let segment;
 </script>
 <header>
-    <Nav />
+    <Nav {segment} />
     
 </header>
