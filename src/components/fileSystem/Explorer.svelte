@@ -1,9 +1,11 @@
-<!-- <script context="module" ✂prettier:content✂="CiAgICBpbXBvcnQgZnMgZnJvbSAiZnMiOwogICAgY29uc3QgZGlyID0gZnMucmVhZGRpcigpOwo=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=" ✂prettier:content✂="e30=">{}</script> -->
 <script>
     import Folder from "./Folder.svelte";
-    // export let dir;
-    const tree = __dirname;
-    const folders = tree.split("/");
+    import LocalFolder from "./LocalFolder.svelte";
+
+    const localRoot = __dirname;
+
+    const folders = localRoot.split("/");
+
     let root = [
         {
             type: "folder",
@@ -40,7 +42,7 @@
 </script>
 
 <p>{folders.length}</p>
-<Folder name="ici" files={folders} extended />
+<LocalFolder name="ici" files={folders} extended />
 <p>
     {#each folders as folder}
         <span>{folder}<br /></span>

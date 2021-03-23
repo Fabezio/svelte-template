@@ -1,5 +1,6 @@
 <script>
 	import Title from "../components/Title.svelte";
+	import Button from "../components/UI/Button.svelte";
 	// import Form from "../components/Form.svelte";
 </script>
 
@@ -7,6 +8,8 @@
 <!-- <Form /> -->
 <section>
 	<p>Ceci est la page d'accueil</p>
+	<Button />
+	<Button urlName="https://www.google.fr" text="lien" />
 </section>
 
 <style>

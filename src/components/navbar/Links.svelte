@@ -1,40 +1,35 @@
 <script>
     export let segment;
+    console.log(typeof segment);
+    const localLinks = [
+        { url: undefined, label: "Accueil" },
+        { url: "about", label: "A propos" },
+        { url: "blog", label: "Le blog", hasRel: true },
+        { url: "infos", label: "Infos", hasRel: true },
+        // { url: "files", label: "Fichiers" },
+    ];
+    console.table(localLinks);
 </script>
 
 <ul>
-    <li>
-        <a aria-current={segment === undefined ? "page" : undefined} href="."
-            >Accueil</a
-        >
-    </li>
-    <li>
-        <a aria-current={segment === "about" ? "page" : undefined} href="about"
-            >A propos</a
-        >
-    </li>
-
-    <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-        the blog data when we hover over the link or tap it on a touchscreen -->
-    <li>
-        <a
-            rel="prefetch"
-            aria-current={segment === "blog" ? "page" : undefined}
-            href="blog">Le blog</a
-        >
-    </li>
-    <li>
-        <a
-            rel="prefetch"
-            aria-current={segment === "infos" ? "page" : undefined}
-            href="infos">Infos</a
-        >
-    </li>
-    <li>
-        <a aria-current={segment === "files" ? "page" : undefined} href="files"
-            >Fichiers</a
-        >
-    </li>
+    {#each localLinks as link}
+        <li>
+            {#if !link.hasRel}
+                <a
+                    aria-current={segment === link.url ? "page" : undefined}
+                    href={link.url == undefined ? "." : link.url}
+                    >{link.label}</a
+                >
+            {:else}
+                <a
+                    rel="prefetch"
+                    aria-current={segment === link.url ? "page" : undefined}
+                    href={link.url == undefined ? "." : link.url}
+                    >{link.label}</a
+                >
+            {/if}
+        </li>
+    {/each}
 </ul>
 
 <style>
